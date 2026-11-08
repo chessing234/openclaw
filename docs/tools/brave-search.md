@@ -79,7 +79,9 @@ Brave search-language code (e.g. `en`, `en-gb`, `zh-hans`).
 </ParamField>
 
 <ParamField path="ui_lang" type="string">
-ISO language code for UI elements.
+Language-region locale for UI elements, such as `en-US` or `de-DE`. The region
+subtag is required; a language-only value such as `en` is rejected. Supported
+only in `web` mode.
 </ParamField>
 
 <ParamField path="freshness" type="'day' | 'week' | 'month' | 'year'">
@@ -102,6 +104,7 @@ await web_search({
   query: "renewable energy",
   country: "DE",
   language: "de",
+  ui_lang: "de-DE",
 });
 
 // Recent results (past week)
