@@ -36,7 +36,7 @@ Details: [Plugins](/tools/plugin)
 ## Setup
 
 ```bash
-openclaw channels add --channel tlon --ship ~sampel-palnet --url https://your-ship-host --code lidlut-tabwed-pillex-ridrup
+openclaw channels add --channel tlon --ship '~sampel-palnet' --url https://your-ship-host --code lidlut-tabwed-pillex-ridrup
 ```
 
 Or edit config directly:
