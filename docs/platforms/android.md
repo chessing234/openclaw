@@ -567,6 +567,9 @@ Camera commands (foreground only; permission-gated): `camera.snap` (jpg), `camer
 - To start continuous **Talk**, tap the trailing Talk button with an empty draft
   and no active run. The microphone menu contains only dictation and voice notes.
   Dictation, voice-note recording, and Talk are mutually exclusive microphone paths.
+- Continuous Talk requires the app to remain in the foreground. Locking the phone
+  or switching to another app stops Talk capture and playback, even while the
+  Gateway connection stays active. Reopen OpenClaw and tap Talk to start again.
 - Your selected agent stays bound to Talk and the main chat when the same Gateway
   reconnects, including while its agent list refreshes. Removing that agent falls
   back to the Gateway default if your role allows it, or the first available agent.
