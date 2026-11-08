@@ -69,7 +69,7 @@ openclaw doctor
   </Accordion>
   <Accordion title="Timezone gotchas">
     - Cron expressions without `--tz` use the gateway host timezone.
-    - `at` schedules without timezone are treated as UTC.
+    - An offset-less `--at` datetime uses `--tz` when supplied; otherwise it is treated as UTC. For example, `--at "2030-01-15T09:00:00" --tz America/New_York` schedules 9 AM in New York. An explicit `Z` or numeric offset in the timestamp fixes the instant independently of `--tz`.
     - Job `activeHours` has its own timezone (`user`, `local`, or an IANA zone), independent of the cron expression's `--tz`.
 
   </Accordion>
