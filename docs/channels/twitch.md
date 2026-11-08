@@ -176,6 +176,7 @@ Existing configurations with no `allowFrom` and empty or absent `allowedRoles` r
             default: {
               username: "openclaw",
               accessToken: "oauth:abc123...",
+              clientId: "xyz789...",
               channel: "yourchannel",
               allowFrom: ["123456789", "987654321"],
             },
@@ -194,6 +195,7 @@ Existing configurations with no `allowFrom` and empty or absent `allowedRoles` r
             default: {
               username: "openclaw",
               accessToken: "oauth:abc123...",
+              clientId: "xyz789...",
               channel: "yourchannel",
               allowedRoles: ["moderator", "vip"],
             },
@@ -214,6 +216,7 @@ Existing configurations with no `allowFrom` and empty or absent `allowedRoles` r
             default: {
               username: "openclaw",
               accessToken: "oauth:abc123...",
+              clientId: "xyz789...",
               channel: "yourchannel",
               requireMention: false,
             },
